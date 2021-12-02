@@ -1,0 +1,49 @@
+
+html, body{
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+}
+
+
+
+header
+{
+width: 100vw;
+height: 250px;
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("/Images/header-background.png");
+background-position: 50% 15%;
+background-repeat: no-repeat;
+background-size: cover;
+
+font-family: open-sans, sans-serif; 
+font-weight: 700; 
+font-style: normal;
+color: #FFFFFF;
+}
+
+header img {
+    width: 24px;
+    height: 23px;
+    position: absolute;
+}
+
+#logo-container{
+    display: inline-flex;
+}
+
+
+header h3 {
+    font-size: 12px;
+    position: absolute;
+    left: 35%;
+    top: 10%; 
+}
+
+header h4 {
+    font-size: 11px;
+    position: absolute;
+    left: 2%;
+}
