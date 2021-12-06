@@ -1,10 +1,19 @@
 
 html, body{
     margin: 0;
+    padding: 0;
 }
 
 body{
     position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+p, h3{
+    color: #0E1317;
 }
 
 /* Header */
@@ -46,16 +55,195 @@ body{
                     height: 25px;
                     margin-top: 30px;
                     padding: 0px;
+                    font-size: 11px;
                 }
 
                 #tagline{
                     text-align: right;
-                    font-size: .8em;
-                    width: 75vw;
+                    font-size: 12px;
+                    width: 65vw;
                     position: absolute;
                     top: 40px;
                     right: 30px;
+                    line-height: 160%;
+
+                    color: #FFFFFF;
                 }
 /* Body */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section:nth-child(1){
+    margin: 0;
+    background: no-repeat center/100% url("/Images/background-gradient-blue-mobile.png");
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section:nth-child(1) div
+{
+    padding: 30px;
+
+}
+
+.section:nth-child(1) h3
+{
+    text-align: center;
+    font-family: open-sans, sans-serif; 
+    font-weight: 700; 
+    font-style: normal;
+    font-size: 16px;
+}
+
+.section:nth-child(1) p
+{
+    text-align: center;
+    font-family: open-sans, sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: .75em;
+    line-height: 165%;
+
+}
+
+.section:nth-child(1) img
+{
+    width: 100%;
+}
+
+.section:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: open-sans, sans-serif; 
+
+    background: linear-gradient(206.28deg, #8ABDE9 4.43%, rgba(138, 189, 233, 0.5) 95.29%);
+    box-shadow: 0px 4px 15px rgba(138, 190, 233, 0.25);
+}
+
+#icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#icon-container div 
+{
+    width: 150px;
+    margin: auto;
+}
+.section img {
+    width: 100vw;
+    margin: 0;
+}
+
+.section:nth-child(2) img{
+    width: 75px;
+}
+
+.section:nth-child(2) {
+    padding: 30px;
+}
+
+.section:nth-child(2) h3{
+    font-size: 16px;
+}
+
+.section:nth-child(2) p{
+    font-size: .75em;
+}
+
+.section:nth-child(3){
+    padding: 50px;
+    text-align: center;
+}
+
+.section:nth-child(3) h3{
+    text-align: center;
+    font-family: open-sans, sans-serif; 
+    font-weight: 700; 
+    font-style: normal;
+    font-size: 16px;
+}
+
+
+.section:nth-child(3) p{
+    text-align: center;
+    font-family: open-sans, sans-serif; 
+    font-weight: 400; 
+    font-style: normal;
+    font-size: .75em;
+
+    line-height: 165%;
+}
+
+#note{
+    font-size: 6px;
+    text-align: center;
+}
+
+#CTA{
+    display: flex;
+    justify-content: center;
+}
+
+#CTA input {
+    width: 180px;
+    padding: 10px;
+
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px 0px 0px 5px;
+
+    text-align: left;
+    font-family: open-sans, sans-serif; 
+    font-weight: 400; 
+    font-size: .75em;
+
+    color: rgba(0, 0, 0, 0.4);
+
+    
+}
+
+button {
+    padding: 10px;
+    background: #EF8345;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+footer{
+
+    border-top: .5px solid rgba(0, 0, 0, 0.2);
+    color: #0E1317;
+
+    font-family: open-sans, sans-serif; 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    padding: 10px;
+
+    background-color: #222F3A;
+    color: #FFFFFF;
+
+}
+
+
+
 
 
