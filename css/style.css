@@ -83,7 +83,7 @@ p, h3{
     .section:nth-child(1){
 
         margin: 0;
-        background: no-repeat center/100% url("/Images/background-gradient-blue-mobile.png");
+        background: no-repeat center/100% url("Images/background-gradient-blue-mobile.png");
         display: flex;
         flex-direction: column;
     }
