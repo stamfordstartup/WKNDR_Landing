@@ -24,7 +24,7 @@ p, h3{
             header{
                     width: 100vw;
                     height: 150px;
-                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("Images/header-background.png");
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../Images/header-background.png");
                     background-position: 50% 15%;
                     background-repeat: no-repeat;
                     background-size: cover;
