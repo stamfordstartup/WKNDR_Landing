@@ -25,7 +25,7 @@ p, h3{
 /* Header */
             header{
                     width: 100vw;
-                    height: 150px;
+                    height: 200px;
                     background: linear-gradient(0deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.38)), url("../Images/header-background.png");
                     background-position: 50% 15%;
                     background-repeat: no-repeat;
@@ -52,9 +52,9 @@ p, h3{
                 }
 
                 #logo-container img{
-                    height: 30px;
+                    width: 20%;
                     margin: 5px;
-                    padding: 0px;
+                    padding: 10px;
                 }
 
                 #logo-container h5{
@@ -66,12 +66,13 @@ p, h3{
 
                 #tagline{
                     text-align: right;
-                    font-size: .95em;
-                    width: 65vw;
+                    font-size: 16px;
+                    width: 75vw;
                     position: absolute;
-                    top: 40px;
+                    top: 55px;
                     right: 30px;
                     line-height: 160%;
+                    letter-spacing: default;
 
                     color: #FFFFFF;
 
@@ -87,15 +88,22 @@ p, h3{
     .section:nth-child(1){
 
         margin: 0;
-        background: no-repeat center/100% url("Images/background-gradient-blue-mobile.png");
+        background: no-repeat center/100% url("../Images/background-gradient-blue-mobile.png");
         display: flex;
         flex-direction: column;
+
+
+
+        background-position: 20% 5%;
     }
 
 
     .section:nth-child(1) div
     {
-        padding: 30px;
+        margin: auto;
+        padding: 40px;
+        padding-left: 60px;
+        padding-right: 60px;
 
     }
 
@@ -172,7 +180,13 @@ p, h3{
 
     .section:nth-child(3){
         padding: 50px;
+        margin: 0px;
         text-align: center;
+
+        background-image: url("../Images/background-gradient-orange-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 20% -10%;
+        background-size: cover;
     }
 
     .section:nth-child(3) h3{
@@ -274,16 +288,26 @@ p, h3{
         margin-left: 20px;
     }
 
+
     #tagline{
         text-align: right;
-        font-size: 1.15em;
+        font-size: 1.25em;
+        /*
         top: 80px;
         width: 55vw;
-        right: 60px;
+        right: 60px;*/
+
+        margin: auto;
+
+        top: 15%;
 
         color: #FFFFFF;
     }
 
+    .section:nth-child(1)
+    {
+        background-position: 20% -10%;
+    }
 
     .section:nth-child(1) div
     {
@@ -291,7 +315,6 @@ p, h3{
         padding: 60px;
         padding-left: 80px;
         padding-right: 80px;
-
     }
 
     .section:nth-child(1) p
@@ -316,19 +339,52 @@ p, h3{
 }
 
 @media (min-width: 600px){
+    
+    header
+    {
+        height: 300px;
+    }
+
+    #tagline{
+        font-size: 1.4em;
+        top: 15%;
+        right: 80px;
+        width: 55vw;
+    }
+    
     .section:nth-child(1) 
     {
         flex-direction: row;
+        padding: 0px;
+        background-image: url("../Images/background-gradient-blue-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 20% -10%;
     }
 
-    .section:nth-child(1) div {
-        padding: 45px;
+    .section:nth-child(1) h3{
+        font-size: 1.25em;
     }
+
+    .section:nth-child(1) p{
+        font-size: 1em;
+    }
+
+    .section:nth-child(2) h3{
+        font-size: 1.25em;
+    }
+
+    .section:nth-child(2) p{
+        font-size: 1em;
+    }
+
 
     .section:nth-child(1) img {
-        width: 50%;
-        height: 50%;
+        width: 40%;
+        height: 40%;
+
         margin: auto;
+
+        border-radius: 5px 0px 0px 5px;
     }
 
     #icon-container
@@ -336,38 +392,71 @@ p, h3{
         flex-direction: row;
         padding: 20px;
     }
+
+
+    .section:nth-child(2) img{
+        width: 90px;
+    }
     
     .section:nth-child(3){
-        padding: 70px;
+        padding: 100px;
+    }
+
+    .section:nth-child(3) h3{
+        font-size: 1.25em;
+    }
+
+    .section:nth-child(3) p{
+        font-size: 1em;
+    }
+
+    #CTA input {
+        width: 300px;
+    }
+
+    #note {
+        font-size: 10.5px;
     }
 }
 
-
-@media (min-width: 768px) {
-    .section:nth-child(1){
-        padding: 30px;
-    }
-}
 
 @media (min-width: 1024px) {
 
     #tagline{
         font-size: 1.7em;
+        left: 450px;
+        top: 135px;
+        width: 45vw;
+        text-align: right;
     }
     .section:nth-child(1){
-        padding: 50px;
+        padding: 0px;
     }
 
     .section:nth-child(1) h3{
-        font-size: 1.5em;
+        font-size: 22px;
     }
 
     .section:nth-child(1) p {
-        font-size: 1.2em;
+        font-size: 1.05em;
+    }
+
+    .section:nth-child(1) div {
+        padding: 80px;
+    }
+
+    .section:nth-child(1) img {
+        width: 40%;
+        height: 40%;
+
+        border-radius: 5px 0px 0px 5px;
+
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 
     .section:nth-child(2) h3 {
-        font-size: 1.5em;
+        font-size: 22px;
     }
 
     .section:nth-child(2) p {
@@ -375,12 +464,14 @@ p, h3{
     }
 
     .section:nth-child(3) h3 {
-        font-size: 1.5em;
+        font-size: 22px;
     }
 
     .section:nth-child(3) {
         margin-left: 100px;
         margin-right: 100px;
+
+        padding: 100px;
     }
 
     .section:nth-child(3) p {
@@ -402,6 +493,10 @@ p, h3{
         font-size: 12px;
     }
 
+    #logo-container img{
+        width: 10%;
+    }
+
 }
 
 @media (min-width: 1440px){
@@ -418,11 +513,11 @@ p, h3{
     }
 
     .section:nth-child(1) h3 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .section:nth-child(1) p {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     #icon-container{
@@ -437,7 +532,7 @@ p, h3{
     }
 
     .section:nth-child(2) h3{
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .section:nth-child(2) img{
@@ -445,16 +540,11 @@ p, h3{
     }
 
     .section:nth-child(2) p{
-        font-size: 22px;
-    }
-
-    .section:nth-child(2) {
         font-size: 1.3em;
     }
 
     .section:nth-child(3) {
-        padding: 0px;
-        margin: 70px 150px 70px 150px;
+        padding: 100px;
     }
 
     .section:nth-child(3) p {
@@ -462,7 +552,11 @@ p, h3{
     }
 
     .section:nth-child(3) h3 {
-        font-size: 1.8em;
+        font-size: 1.5em;
+    }
+
+    .section:nth-child(3) {
+        background-position: 20% 15%;
     }
 
     #CTA input {
@@ -476,6 +570,14 @@ p, h3{
     footer {
         font-size: 12px;
     }   
+
+    #icon-container div {
+        width: 200px;
+    }
+
+    #logo-container img{
+        width: 15%;
+    }
 }
 
 
@@ -493,6 +595,11 @@ p, h3{
         width: 500px;
     }
 
+    #logo-container img {
+        width: 50%;
+        margin: 25px;
+    }
+
 
     #logo-container h5 {
         font-size: 2em;
@@ -508,7 +615,7 @@ p, h3{
     }
 
     .section:nth-child(2) h3{
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .section:nth-child(2) img{
@@ -516,7 +623,7 @@ p, h3{
     }
 
     .section:nth-child(2) p{
-        font-size: 1.75em;
+        font-size: 2.5em;
     }
 
     #icon-container{
@@ -525,7 +632,7 @@ p, h3{
     }
 
     #icon-container div {
-        width: 300px;
+        width: 350px;
     }
 
     .section:nth-child(3) h3{
@@ -536,11 +643,28 @@ p, h3{
         font-size: 2.5em;
     }
 
+    .section:nth-child(3) {
+        padding: 150px;
+    }
 
-/*Left off here*/   
+    #note {
+        font-size: 22px;
+    }
 
     #CTA input {
-        width: 900px;
-        padding: 50px;
+        width: 950px;
+        padding: 40px;
+        border-radius: 15px 0px 0px 15px;
+        font-size: 2em;
+    }
+
+    #CTA button{
+        padding: 30px;
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 1.5em;
+        padding: 20px;
     }
 }
