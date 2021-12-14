@@ -187,7 +187,12 @@ p, h3{
         background-repeat: no-repeat;
         background-position: 20% -10%;
         background-size: cover;
+
+        
+
     }
+
+
 
     .section:nth-child(3) h3{
         text-align: center;
@@ -345,6 +350,10 @@ p, h3{
         height: 300px;
     }
 
+    #logo-container img {
+        width: 12%;
+    }
+
     #tagline{
         font-size: 1.4em;
         top: 15%;
@@ -399,7 +408,16 @@ p, h3{
     }
     
     .section:nth-child(3){
-        padding: 100px;
+
+        background-image: url("../Images/background-gradient-orange-desktop.png"), url("../Images/arrow.png");
+        background-repeat: no-repeat;
+        background-position: 20% -10%, -10% 85%;
+        background-size: cover, 40%;
+    }
+
+    .column {
+        float: right;
+        margin-left: 30vw;
     }
 
     .section:nth-child(3) h3{
@@ -468,8 +486,6 @@ p, h3{
     }
 
     .section:nth-child(3) {
-        margin-left: 100px;
-        margin-right: 100px;
 
         padding: 100px;
     }
@@ -556,7 +572,8 @@ p, h3{
     }
 
     .section:nth-child(3) {
-        background-position: 20% 15%;
+        background-position: 20% 15%, -10% 85%;
+        background-size: cover, 38%;
     }
 
     #CTA input {
