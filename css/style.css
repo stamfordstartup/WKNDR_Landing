@@ -8,6 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /*
 * {
     background: #000 !important;
@@ -228,6 +229,10 @@ p, h3{
         display: flex;
         justify-content: center;
     }
+    
+    #email:focus::-webkit-input-placeholder {
+        opacity: 0;
+    }
 
     #email {
         width: 100%;
@@ -245,6 +250,8 @@ p, h3{
 
         color: rgba(0, 0, 0, 0.4);
     }
+
+
 
     .submit{
         padding: 5%;
@@ -312,8 +319,6 @@ p, h3{
         color: #FFFFFF;
 
     }
-
-
 
 
 
