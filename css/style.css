@@ -27,6 +27,8 @@ body{
 
 p, h3{
     color: #0E1317;
+
+    line-height: 1.8em;
 }
 /* Header */
             header{
@@ -107,9 +109,11 @@ p, h3{
     .section:nth-child(1) div
     {
         margin: auto;
-        padding: 40px;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding: 30px;
+        padding-left: 45px;
+        padding-right: 45px;
+
+        line-height: 1.8em;
 
         display: flex;
         flex-direction: column;
@@ -251,15 +255,13 @@ p, h3{
         color: rgba(0, 0, 0, 0.4);
     }
 
-    input:val
-
 
     .submit{
         padding: 5%;
     }
 
     #first-btn{
-        padding: 8px;
+        padding: 4px;
         background: #EF8345;
         border: none;
         border-radius: 5px;
@@ -382,6 +384,11 @@ p, h3{
 
     }
 
+    #first-btn {
+        width: 65%;
+        padding: 5px;
+    }
+
     #icon-container div  {
         padding: 10px;
     }
@@ -389,6 +396,7 @@ p, h3{
     .section:nth-child(3){
         padding: 60px;
     }
+
 }
 
 @media (min-width: 600px){
@@ -411,7 +419,7 @@ p, h3{
     
     .section:nth-child(1) 
     {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0px;
         background-image: url("../Images/background-gradient-blue-desktop.png");
         background-repeat: no-repeat;
@@ -436,13 +444,11 @@ p, h3{
 
 
     .section:nth-child(1) img {
-        width: 40%;
-        height: 40%;
+        width: 100%;
 
         margin: auto;
-
-        border-radius: 5px 0px 0px 5px;
     }
+
 
     #icon-container
     {
@@ -476,6 +482,12 @@ p, h3{
         font-size: 1em;
     }
 
+    #first-btn {
+        
+        padding: 6px;
+        margin: auto;
+    }
+
     #email {
         width: 300px;
     }
@@ -486,6 +498,30 @@ p, h3{
 
     button {
         font-size: 12px;
+    }
+}
+
+@media (min-width: 768px){
+
+    #first-btn{
+        width: 180px;
+    }
+
+    .section:nth-child(1) {
+        flex-direction: row;
+    }
+
+    .section:nth-child(1) img {
+        width: 40%;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .section:nth-child(1) p {
+        width: 95%;
+        margin: auto;
+        padding-bottom: 25px;
+
+        font-size: .9em;
     }
 }
 
@@ -501,6 +537,10 @@ p, h3{
     }
     .section:nth-child(1){
         padding: 0px;
+
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
     }
 
     .section:nth-child(1) h3{
@@ -520,9 +560,6 @@ p, h3{
         height: 40%;
 
         border-radius: 5px 0px 0px 5px;
-
-        margin-top: 5%;
-        margin-bottom: 5%;
     }
 
     .section:nth-child(2) h3 {
@@ -579,6 +616,10 @@ p, h3{
         font-size: 18px;
         letter-spacing: .5px;
 
+        width: 190px;
+        padding: 12px;
+        margin: auto;
+
         margin: auto;
     }
 
@@ -617,11 +658,11 @@ p, h3{
     }
 
     .section:nth-child(1) h3 {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 
     .section:nth-child(1) p {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     #icon-container{
@@ -636,7 +677,7 @@ p, h3{
     }
 
     .section:nth-child(2) h3{
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 
     .section:nth-child(2) img{
@@ -644,7 +685,7 @@ p, h3{
     }
 
     .section:nth-child(2) p{
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .section:nth-child(3) {
@@ -652,11 +693,11 @@ p, h3{
     }
 
     .section:nth-child(3) p {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .section:nth-child(3) h3 {
-        font-size: 1.5em;
+        font-size: 1.75em;
     }
 
     .section:nth-child(3) {
@@ -665,8 +706,10 @@ p, h3{
     }
 
     #first-btn {
-        width: 35%;
-        padding: 20px;
+        width: 40%;
+        padding: 16px;
+        font-size: 1.3em;
+        margin: auto;
     }
 
     #email {
@@ -686,7 +729,8 @@ p, h3{
     }
 
     footer {
-        font-size: 12px;
+        font-size: 16px;
+        padding: 20px;
     }   
 
     #icon-container div {
@@ -721,6 +765,10 @@ p, h3{
 
     #logo-container h5 {
         font-size: 2em;
+    }
+
+    .section:nth-child(1){
+        width: 90%;
     }
 
 
@@ -790,6 +838,8 @@ p, h3{
         font-size: 32px;
         letter-spacing: .5px;
 
+        width: 350px;
+        padding: 30px;
         margin: auto;
     }
 
@@ -801,7 +851,7 @@ p, h3{
     }
 
     footer {
-        font-size: 1.5em;
-        padding: 20px;
+        font-size: 2em;
+        padding: 30px;
     }
 }
